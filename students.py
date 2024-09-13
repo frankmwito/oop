@@ -1,0 +1,1 @@
+# class student with methods to add grades and calculate the average grade
