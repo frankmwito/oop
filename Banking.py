@@ -22,9 +22,11 @@ class Bank_accounts:
             else:
                 print("Account not found")
     
-    def transfer(self, from_account_number, to_account_number ,transfer_amount = 0.00):
+    def transfer(self, transfer_amount = 0.00):
         from_account = None
         to_account = None
+        from_account_number = input("account number you want to transfer money from: ")
+        to_account_number = input("account number you want to transfer money to: ")
         transfer_amount = float(input("Enter the amount you want to transfer: "))
         # Find the source and destination accounts by account number
         for account in self.accounts:
